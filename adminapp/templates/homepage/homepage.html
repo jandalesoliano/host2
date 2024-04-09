@@ -1,0 +1,13 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home Page</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'adminapp/css/styles.css' %}">
+</head>
+<body>
+    <h1>Hello Dashboard</h1>
+    <button onclick="location.href='{% url 'adminapp:login' %}'" type="button">Sign in for Admin</button>
+    <button onclick="location.href='{% url 'studentapp:login' %}'" type="button">Sign in for Student</button>
+</body>
+</html>
